@@ -1,4 +1,4 @@
-# Prechadzame po KollVtr taboch a validujeme Produkt, Finanzierungsart, Zahlweg //test
+# Prechadzame po KollVtr taboch a validujeme Produkt, Finanzierungsart, Zahlweg //Github test
 # -*- coding: utf-8 -*-
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
