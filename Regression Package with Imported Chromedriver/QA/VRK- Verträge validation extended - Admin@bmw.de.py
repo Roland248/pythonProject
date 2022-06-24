@@ -187,9 +187,9 @@ WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[c
 #Vertrag 800004
 driver.get("https://qa-verka-portal.consulting.is2.show/#/uebersicht/verwaltung/vetraege/details/balance-flex/800004")
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "TestFirma01 AG Region Süd")]')))
-WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "Prof. Hans Graf von Schmidt")]')))
-WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "Altersrente")]')))
-WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "14009001")]')))
+#WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "Prof. Hans Graf von Schmidt")]')))
+#WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "Altersrente")]')))
+#WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "14009001")]')))
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "Rentner")]')))
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "Altersrentner")]')))
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "Pensionskasse")]')))
@@ -201,6 +201,9 @@ WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[c
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "158,58 €")]')))
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "61,53 €")]')))
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "220,11 €")]')))
+time.sleep(5)
+driver.get("https://qa-verka-portal.consulting.is2.show/#/uebersicht/verwaltung/vetraege/")
+time.sleep(1)
 
 #Vertrag 800005
 driver.get("https://qa-verka-portal.consulting.is2.show/#/uebersicht/verwaltung/vetraege/details/balance-flex/800005")
@@ -230,6 +233,9 @@ WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[c
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "118.765,02 €")]')))
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "74.972,59 €")]')))
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "01.10.2021")]')))
+time.sleep(5)
+driver.get("https://qa-verka-portal.consulting.is2.show/#/uebersicht/verwaltung/vetraege/")
+time.sleep(1)
 
 #Vertrag 800013
 driver.get("https://qa-verka-portal.consulting.is2.show/#/uebersicht/verwaltung/vetraege/details/balance-klassik/800013")
