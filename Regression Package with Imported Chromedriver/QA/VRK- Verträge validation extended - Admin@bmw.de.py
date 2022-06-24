@@ -29,7 +29,7 @@ driver = webdriver.Chrome(service=s)
 #Open URL
 driver.get("https://qa-verka-portal.consulting.is2.show/#/login")
 time.sleep(1)
-#driver.maximize_window()
+driver.maximize_window()
 #wait for load
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "Anmelden")]')))
 #Username
@@ -119,8 +119,6 @@ WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[c
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "Dokumenttyp")]')))
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "Titel")]')))
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "Datum")]')))
-#Dateigröße was removed from "M" viewport
-#WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "Dateigröße")]')))
 time.sleep(5)
 driver.get("https://qa-verka-portal.consulting.is2.show/#/uebersicht/verwaltung/vetraege/")
 time.sleep(1)
@@ -200,14 +198,11 @@ WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[c
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "Entgeltumwandlung")]')))
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "Balance Flex")]')))
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "2.399,88")]')))
-#WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "Überweisung jährlich")]')))
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "VN")]')))
-#WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "80 % Sparbeitrag")]')))
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "2 %")]')))
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "01.11.")]')))
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "01.06.2040")]')))
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "monatlich")]')))
-#WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "Optionsrecht eingeräumt")]')))
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "65,11")]')))
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "93,17")]')))
 WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.XPATH, '//*[contains(text(), "158,28")]')))
