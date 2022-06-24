@@ -72,7 +72,6 @@ options = webdriver.ChromeOptions()
 options.add_argument("headless")
 s = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=s)
-#driver = webdriver.Chrome(executable_path= chromeDriverExe)
 #Open URL
 driver.get("https://qa-verka-portal.consulting.is2.show/#/login")
 driver.maximize_window()
